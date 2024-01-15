@@ -1,12 +1,12 @@
-import createEmployeesObject from "./11-createEmployeesObject.js";
-import createReportObject from './12-createReportObject.js';
-import createIteratorObject from './100-createIteratorObject.js';
-import iterateThroughObject from './101-iterateThroughObject.js';
-
+import createEmployeesObject from './11-createEmployeesObject';
+import createReportObject from './12-createReportObject';
+import createIteratorObject from './100-createIteratorObject';
+// eslint-disable-next-line import/no-self-import
+import iterateThroughObject from './101-iterateThroughObject';
 
 const employees = {
-    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
-    ...createEmployeesObject('marketing', ['Sylvie'])
+  ...createEmployeesObject('engineering', ['Bob', 'Jane']),
+  ...createEmployeesObject('marketing', ['Sylvie']),
 };
 
 const report = createReportObject(employees);
